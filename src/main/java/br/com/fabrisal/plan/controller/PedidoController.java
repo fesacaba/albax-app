@@ -3,7 +3,6 @@ package br.com.fabrisal.plan.controller;
 import br.com.fabrisal.plan.controller.dto.PedidoDto;
 import br.com.fabrisal.plan.controller.dto.PedidoParamsDto;
 import br.com.fabrisal.plan.exception.BusinessException;
-import br.com.fabrisal.plan.model.SequenceModel;
 import br.com.fabrisal.plan.service.IPedidoService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,10 +21,6 @@ public class PedidoController {
     @Autowired
     private IPedidoService pedidoService;
 
-    @GetMapping("/sequence")
-    public SequenceModel sequence() {
-        return pedidoService.getSequence();
-    }
 
     @GetMapping("/valor-em-aberto")
     public Double valorEmAberto() {

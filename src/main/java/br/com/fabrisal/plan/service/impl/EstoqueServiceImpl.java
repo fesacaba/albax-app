@@ -6,7 +6,6 @@ import br.com.fabrisal.plan.controller.dto.UpdateEstoque;
 import br.com.fabrisal.plan.exception.BusinessException;
 import br.com.fabrisal.plan.model.EstoqueModel;
 import br.com.fabrisal.plan.repository.EstoqueRepository;
-import br.com.fabrisal.plan.service.AuditoriaService;
 import br.com.fabrisal.plan.service.BeanService;
 import br.com.fabrisal.plan.service.IEstoqueService;
 import br.com.fabrisal.plan.service.OperacaoEstoque;

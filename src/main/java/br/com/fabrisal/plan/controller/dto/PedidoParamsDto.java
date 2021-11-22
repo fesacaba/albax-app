@@ -1,6 +1,5 @@
 package br.com.fabrisal.plan.controller.dto;
 
-import br.com.fabrisal.plan.model.SequenceModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
 import lombok.Data;
@@ -13,7 +12,6 @@ import java.time.LocalDate;
 public class PedidoParamsDto {
 
     private Long idCliente;
-    private SequenceModel sequence;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd")
     @ApiModelProperty(example = "2019-12-01")
     private LocalDate dataInicial;
